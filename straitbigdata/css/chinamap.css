@@ -1,0 +1,87 @@
+/*左一图表*/
+#china_left1{
+    position: absolute;
+    top:20px;
+    left: 10px;
+    color:#000;
+    border-spacing: 0px;
+    border-top-left-radius: 0.5em ;
+    border-top-right-radius: 0.5em;
+    background-color: rgba(0,0,0,0.3);
+}
+#china_left1_title{
+    height: 40px;
+    color: #FE8920;
+    background-color:rgba(0,0,0,0.5);
+    border-top-left-radius: 0.5em ;
+    border-top-right-radius: 0.5em;
+    text-align: left;
+    padding-left: 5px;
+}
+#china_left1_charts{
+    height: 200px;
+    width: 500px;
+}
+.charts_table_left1{
+    height: 40px;
+}
+/*左二图表*/
+#china_left2{
+    position: absolute;
+    top:400px;
+    left: 10px;
+    color:#000;
+    border-spacing: 0px;
+    border-top-left-radius: 0.5em ;
+    border-top-right-radius: 0.5em;
+    background-color: rgba(0,0,0,0.3);
+}
+#china_left2_title{
+    height: 40px;
+    color: #FE8920;
+    background-color:rgba(0,0,0,0.5);
+    border-top-left-radius: 0.5em ;
+    border-top-right-radius: 0.5em;
+    text-align: left;
+    padding-left: 5px;
+}
+#china_left2_charts{
+    height: 200px;
+    width: 500px;
+}
+/*右一图表*/
+#china_right1{
+    position: absolute;
+    top:20px;
+    right: 10px;
+    color:#000;
+    border-spacing: 0px;
+    border-top-left-radius: 0.5em ;
+    border-top-right-radius: 0.5em;
+    background-color: rgba(0,0,0,0.3);
+}
+#china_right1_title{
+    height: 40px;
+    color: #FE8920;
+    background-color:rgba(0,0,0,0.5);
+    border-top-left-radius: 0.5em ;
+    border-top-right-radius: 0.5em;
+    text-align: left;
+    padding-left: 5px;
+}
+#china_right1_charts{
+    height: 200px;
+    width: 500px;
+}
+/*右二图表*/
+#china_right2{
+    position: absolute;
+    top:410px;
+    right: 10px;
+}
+/*右三图表*/
+#china_right3{
+    position: absolute;
+    top:810px;
+    right: 10px;
+}

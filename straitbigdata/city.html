@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="css/map.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/lib/echarts.min.js"></script>
+<script type="text/javascript" src="js/city.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+  <title>产业大数据分析</title>
+</head>
+<body>
+<div class="mainframe">
+  <div class="topbg">
+    <div class="topleft-tit">全国</div><div class="topleft-muluico"></div>
+    <div class="topleft-tit"><span class="provincename"></span></div><div class="topleft-muluico"></div>
+    <div class="topleft-tit"><span class="cityname"></span></div><div class="topleft-muluico"></div>
+    <div class="topright">
+      <a  class="topico01"><span class="cityname"></span>产业导航</a>
+      <a href="index.html" class="topico02">返回首页</a>
+      <a style="cursor: pointer" class="topico03" onclick="history.go(-1)">返回上一级</a>
+    </div>
+  </div>
+<div class="clear"></div>
+<div class="headernav">
+  <!--<div class="headernavtit">2015年<span class="cityname"></span>数字资讯</div>-->
+<div class="clear"></div>
+<div class="imcm imde" id="imouter0">
+<ul id="imenus0">
+<li class="headernav01" style=" line-height:20px;"><span id="indus_1"></span>
+<div class="imsc"><div class="imsubc" style="width:300%;"><ul>
+总人口：608万人<br/>
+法人单位数：221557个<br/>
+大中型工业企业：25222家，其中大型：2543家，中型：25211家。
+</ul></div></div></li>
+<li class="headernav02" style=" line-height:20px;"><span id="indus_2"></span>
+<div class="imsc"><div class="imsubc" style="width:300%; left:-100%;"><ul>
+总人口：608万人<br/>
+法人单位数：221557个<br/>
+大中型工业企业：25222家，其中大型：2543家，中型：25211家。
+</ul></div></div></li>
+<li class="headernav03" style=" line-height:20px;"><span id="indus_3"></span>
+<div class="imsc"><div class="imsubc" style="width:300%;left:-200%;"><ul>
+总人口：608万人<br/>
+法人单位数：221557个<br/>
+大中型工业企业：25222家，其中大型：2543家，中型：25211家。
+</ul></div></div></li>
+</ul>
+<div class="clear"></div>
+<script language="JavaScript" src="js/ocscript.js" type="text/javascript"></script>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div id="mapleftframe">
+<div class="mapframetop">
+<span class="topico"><img src="images/ico01.png" width="16" height="16" /></span><span class="toptit"><span class="cityname"></span>历年GDP</span>
+</div>
+<div class="mapframebottom">
+<div id="city_left1_charts" style="height:240px;"></div>
+</div>
+<div class="clear"></div>
+<div class="topframebg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr id="citygdp_year">
+    </tr>
+</table>
+</div>
+<div class="mapframebottom">
+<ul class="datalist datalist1">
+</ul>
+</div>
+<div class="clear"></div>
+<div class="mapframetop">
+<span class="topico"><img src="images/ico02.png" width="16" height="16" /></span><span class="toptit">三次产业对GDP的贡献率</span>
+</div>
+<div class="mapframebottom">
+<div id="city_left2_charts" style="height:200px;"></div>
+</div>
+<div class="clear"></div>
+<div class="topframebg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr id="city_chanye">
+    </tr>
+</table>
+</div>
+<div class="mapframebottom">
+<ul class="datalist datalist2">
+</ul>
+</div>
+</div>
+<div id="fuzhou_main"></div>
+<div id="maprightframe">
+<div class="mapframetop">
+<span class="topico"><img src="images/ico03.png" width="16" height="16" /></span><span class="toptit"><span class="cityname"></span>第一产业历年总值(2010到2014)</span>
+</div>
+<div class="mapframebottom">
+<div id="city_right1_charts" style="height:240px;"></div>
+</div>
+<div class="clear"></div>
+<div class="mapframetop">
+<span class="topico"><img src="images/ico04.png" width="16" height="16" /></span><span class="toptit"><span class="cityname"></span>第二产业历年总值(2010到2014)</span>
+</div>
+<div class="mapframebottom">
+<div id="city_right2_charts" style="height:240px;"></div>
+</div>
+<div class="clear"></div>
+<div class="mapframetop">
+<span class="topico"><img src="images/ico05.png" width="16" height="16" /></span><span class="toptit"><span class="cityname"></span>第三产业历年总值(2010到2014)</span>
+</div>
+<div class="mapframebottom">
+<div id="city_right3_charts" style="height:240px;"></div>
+</div>
+</div>
+</div>
+</body>
+</html>

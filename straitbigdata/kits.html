@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="css/cloud.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="images/favicon_cloud.png" type="images/x-icon"/>
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/link.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+    <title>海峡云 - 开发套件</title>
+</head>
+<body>
+<div class="header_bg">
+<div class="main1200">
+<div class="logo"></div>
+<div class="nav">
+	<ul>
+        <!--<li><a href="index.html">首页</a><span></span></li>-->
+		<li><a href="platform.html">大数据基础平台</a><span></span></li>
+    	<li><a href="datamart.html">数据集市</a><span></span></li>
+    	<li><a href="kits.html">开发套件</a><span></span></li>
+	</ul>
+</div>
+
+<script>
+$(function(){
+	$('.nav li').hover(function(){
+		$('span',this).stop().css('height','2px');
+		$('span',this).animate({
+			left:'0',
+			width:'100%',
+			right:'0'
+		},200);
+	},function(){
+		$('span',this).stop().animate({
+			left:'50%',
+			width:'0'
+		},200);
+	});
+});
+</script>
+</div>
+</div>
+<div class="clear"></div>
+<div class="kits-frame">
+<img src="images/1_160313145421_1.jpg" height="400" /><br />
+<h2>Golaxy UDFS分布式集群存储系统</h2>
+<p>Golaxy UDFS&nbsp;针对海量数据存储应用而设计的大规模通用及群存储系统，对外支持标准文件访问接口，可构建与通用服务器之上，功能上可替代集群NAS、SANFS&nbsp;等分布式文件系统产品。</p>
+<p>应用场景：</p>
+<p>Golaxy UDFS作为分布式文件存储池，适合对大数据场景中非结构化数据的存储，比如图像、音视频、文档等文件。同时其可单独应用于存储虚拟化、云存储及传统HPC高性能计算领域。目前已在上述领域取得广泛应用。</p>
+<p>Golaxy Base分布式列式数据库系统</p>
+<img src="images/1_160313145053_1.jpg" height="350" /><br />
+<p>构架在分布式文件系统之上的分布式列式数据库系统，能够为海量的结构化和半结构化数据提供高效存储、实时处理及离线分析的完整解决方案。 </p>
+<p>应用场景：</p>
+<p> Golaxy Base&nbsp;适用于海量数据实时查询应用、海量数据高并发分析应用以及海量流式数据处理分析等。 </p>
+<h2>Golaxy DSQL分布式列式数据仓库产品</h2><br />
+<p>针对大数据场景中结构化数据，提供复杂SQL分析功能；并保证千亿条记录，大于百TB，大于64节点规模下的并发访问性能，同时提供低成本可扩展的解决方案。 </p>
+<img src="images/1_160318104534_1_lit.jpg" height="350" /><br />
+<p>应用场景：</p>
+<p>定位为&ldquo;海量数据仓库&rdquo;，面向高价值密度的EDW及商业BI&nbsp;分析领域， 其对应商业产品为Teradata、Netezza及GreenPlum等传统数据仓库产品。 </p>
+<h2>Golaxy DTube天玑分布式数据总线</h2>
+<p> 用于连接各产品组件的数据通道，提供数据缓存、转发等功能。功能上等价于分布式消息队列。 </p>
+<img src="images/1_160310173649_1.jpg" height="350" /><br />
+<p>应用场景：</p>
+<p> Golaxy DTube作为数据通道，针对业务逻辑实现数据流定制。 </p>
+<h2>Golaxy Hadoop天玑Hadoop系统</h2>
+<p> Golaxy Hadoop就是基于Hortonworks的HDP2.0.6进行定制化的版本，其对原生系统做了可用性增强、功能增强及性能的优化适配，为大数据的存储和处理提供一个高性能，高可扩展和低成本的平台。 </p>
+<img src="images/1_160310173826_1.jpg" height="350" /><br />
+<p>Golaxy Hadoop是一个整合的大数据处理平台，主要用于大数据存储和分析基础平台等应用场景。 </p>
+<h2>Golaxy GDB天玑分布式图关系数据库</h2>
+<p>大规模图数据的存储和计算，是分析和挖掘社交网络、通讯网络、知识库网络等图数据中巨大价值的重要基础设施支撑。 </p>
+<img src="images/1_160310173950_1.jpg" height="350" /><br />
+<p>应用场景：</p>
+<p>对于复杂图数据的分析与挖掘，在大数据时代具有很好的实际应用价值。</p>
+<h2>Golaxy BDEP天玑大数据统一运维管理平台</h2>
+<p>针对天玑大数据产品组件的统一运维管理平台。完成对数据分析平台的安装、部署、配置、运维、监控、数据操作等功能，并同时提供命令行和图形两种管理界面。</p>
+<p>应用场景：</p>
+<p> Golaxy BDEP提供两个子平台，分别对应&ldquo;系统管理员&rdquo;和&ldquo;数据分析师&rdquo;角色。前者主要进行系统安装、配置、部署及运行时监控，后者主要提供各组件的功能界面，提供数据分析师一个在线分析、实时展示的工作平台。</p>
+</div>
+<div class="clear"></div>
+<div class="main1200">
+<div id="link-frame">
+  <h2>友情链接</h2>
+  <a href="#" class="preBtn"></a>
+  <div class="linklist">
+    <ul class="linklistul">
+      <li><a href="http://www.cas.cn">中国科学院</a></li>
+      <li><a href="http://www.ict.ac.cn">中国科学院计算技术研究所</a></li>
+      <li><a href="http://www.fzict.ac.cn/">中国科学院计算所福州分所</a></li>
+      <li><a href="http://www.int-yt.com/">中国科学院计算所烟台分所</a></li>
+      <li><a href="http://www.golaxy.cn">中科天玑公司</a></li>
+    </ul>
+  </div>
+  <a href="#" class="nextBtn"></a>
+</div>
+<div class="clear"></div>
+<div class="footer">Copyright &copy; 2016 中国科学院计算技术研究所福州分所 版权所有<br/>
+地址：福建省福州市闽侯县荆溪科技文体中心 邮编：350100<br/>
+闽ICP备16004006号</div>
+</div>
+<!-- 漂浮开始 -->
+<div class="toolbar">
+   <a href="index.html" class="toolbar-item toolbar-item-shouye"><span class="toolbar-layer"></span></a>
+   <a href="javascript:;" class="toolbar-item toolbar-item-weixin"><span class="toolbar-layer"></span></a>
+   <!--<a href="javascript:;" class="toolbar-item toolbar-item-feedback"><span class="toolbar-layer"></span></a>-->
+   <!--<a href="javascript:;" class="toolbar-item toolbar-item-app"><span class="toolbar-layer"></span></a>-->
+   <a href="javascript:scroll(0,0)" id="top" class="toolbar-item toolbar-item-top"></a></div>
+<!-- 漂浮结束 -->
+</body>
+</html>

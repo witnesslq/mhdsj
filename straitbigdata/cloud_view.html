@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css/cloud.css" rel="stylesheet" type="text/css" />
+<link href="css/model.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="images/favicon_cloud.png" type="images/x-icon"/>
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/link.js"></script>
+<script src="js/cloud_view.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<title>海峡云 - 数据集市</title>
+</head>
+<body>
+<div class="header_bg">
+<div class="main1200">
+<div class="logo"></div>
+<div class="nav">
+	<ul>
+        <!--<li><a href="#">首页</a><span></span></li>-->
+        <li><a href="platform.html">大数据基础平台</a><span></span></li>
+        <li><a href="datamart.html">数据集市</a><span></span></li>
+    	<li><a href="kits.html">开发套件</a><span></span></li>
+	</ul>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="cloudview-frame">
+<div class="cloudview">
+<div class="cloudview-img"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="220" height="220" align="center" valign="middle" id="cloud_view_img"></td>
+  </tr>
+</table>
+</div>
+<div class="cloudview-right">
+<div class="cloudview-tit" id="api_name"></div>
+<div class="cloudview-con" id="api_desc">
+</div>
+<a  class="theme-login cloudviewbtn" >申请数据</a>
+</div>
+    <!--弹出框-->
+    <div id="theme-popover" class="theme-popover">
+        <div class="theme-poptit">
+            <a href="javascript:;" title="关闭" class="close">×</a>
+            <h3>申请数据</h3>
+        </div>
+        <div class="theme-popbod dform">
+            <div class="theme-signin" name="loginform">
+                <ol>
+                    <li><strong>您的姓名：</strong><input class="ipt" id="private_name" required type="text" name="log"  size="20" /></li>
+                    <li><strong>您的手机号：</strong><input class="ipt" id="private_phone" name="private_phone" pattern="(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$" required="required" type="text" />
+                    </li>
+                    <li style="padding-left: 40px;color: #999;"><span>提交申请后，客服将联系您并提供接口调用文档</span></li>
+                    <div class="theme-bottomtit">
+                        <button class="btn-submit" id="sbm">确 定</button>
+                        <button class="btn-cancel" onclick="cancelsubmit()">取消</button>
+                    </div>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div id="theme-popover-mask" class="theme-popover-mask"></div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div class="cloudview-listbg">
+<div class="cloudview-listtit">API</div>
+</div>
+<div class="cloudview-listcon" id="api_content">
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div class="main1200">
+<div id="link-frame">
+  <h2>友情链接</h2>
+  <a href="#" class="preBtn"></a>
+  <div class="linklist">
+    <ul class="linklistul">
+      <li><a href="http://www.cas.cn">中国科学院</a></li>
+      <li><a href="http://www.ict.ac.cn">中国科学院计算技术研究所</a></li>
+      <li><a href="http://www.fzict.ac.cn/">中国科学院计算所福州分所</a></li>
+      <li><a href="http://www.int-yt.com/">中国科学院计算所烟台分所</a></li>
+      <li><a href="http://www.golaxy.cn">中科天玑公司</a></li>
+    </ul>
+  </div>
+  <a href="#" class="nextBtn"></a>
+</div>
+<div class="footer">Copyright &copy; 2016 中国科学院计算技术研究所福州分所 版权所有<br/>
+地址：福建省福州市闽侯县荆溪科技文体中心 邮编：350100<br/>
+闽ICP备16004006号</div>
+</div>
+<!-- 漂浮开始 -->
+<div class="toolbar">
+    <a href="index.html" class="toolbar-item toolbar-item-shouye"><span class="toolbar-layer"></span></a>
+    <a href="javascript:;" class="toolbar-item toolbar-item-weixin"><span class="toolbar-layer"></span></a>
+   <!--<a href="javascript:;" class="toolbar-item toolbar-item-feedback"><span class="toolbar-layer"></span></a>-->
+   <!--<a href="javascript:;" class="toolbar-item toolbar-item-app"><span class="toolbar-layer"></span></a>-->
+   <a href="javascript:scroll(0,0)" id="top" class="toolbar-item toolbar-item-top"></a></div>
+<!-- 漂浮结束 -->
+</body>
+</html>

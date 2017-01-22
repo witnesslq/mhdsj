@@ -1,0 +1,243 @@
+﻿*{ margin:0; padding:0;}
+#china_main{position: absolute;top: 200px;left:0px;width:800px;height: 600px;margin-left: 400px}
+#fujian_main{position: absolute;top: 200px;left:0px;width:1000px;height:900px;margin-left: 300px}
+#fuzhou_main{position: absolute;top: 200px;left:0px;width:900px;height: 900px;margin-left: 350px}
+#county_main{position: absolute;top: 0px;left:0px;width:100%;height: 100%;margin: auto;z-index: -1}
+
+body{color:#333333;font-family:"微软雅黑"; font-size:12px;background:#fff;}
+img{ border:0;}
+table{ font-size:12px;}
+ol,ul li{ list-style-type:none;}
+a{color:#333333; text-decoration:none;}
+a:focus {outline:none;-moz-outline:none;}
+a:hover{color:#58a054; text-decoration:underline;}
+.clear {clear:both;}
+.fl{ float:left;}
+.fr{ float:right; display:inline;}
+.poa{ position:absolute;}
+.mainframe{width:100%; height:1160px;background:url(../images/mainbg.jpg) no-repeat center; margin:0 0; }
+.mainframe_county{width:2400px; height:1160px; margin:0 0; }
+.mainbigtit{ margin:0 auto 50px auto; font-size:50px; font-weight:bold; line-height:50px; text-align:center; padding:50px 0 0 0;color:#fff;-webkit-box-reflect: below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.2));}
+background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(136, 184, 233, 1)), to(rgba(255, 255, 255, 1)));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+#chinamap{width:1000px; height:700px;margin:80px auto 0 auto; position:relative; }
+#mapleftframe{ float:left; width:420px; color:#fff; margin-left:10px;margin-top: 50px }
+#maprightframe{ float:right; width:420px; color:#fff; margin-right:10px;;margin-top: 50px}
+.headernav{
+    top: 70px;
+    position: absolute;
+    width: 30%;
+    z-index: 999;
+    left: 35%;
+}
+.headernavtit{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #6da9fe;
+    filter: Dropshadow(offx=2,offy=0,color=#fff)Dropshadow(offx=0,offy=2,color=#fff)Dropshadow(offx=0,offy=-2,color=#fff)Dropshadow(offx=-2,offy=0,color=#fff);
+    text-shadow: #fff 2px 0 0,#fff 0 2px 0,#fff -2px 0 0,#fff 0 -2px 0;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 0;
+}
+.headernav01{ width:33.33%; text-align:center; color:#fff; background: rgba(0,0,0,0.3);z-index: 998}
+.headernav02{ width:33.33%; text-align:center; color:#fff; background: rgba(0,0,0,0.5);z-index: 998}
+.headernav03{ width:33.33%; text-align:center; color:#fff; background: rgba(0,0,0,0.8);z-index: 998}
+.topframebg{ width:100%; height:30px;line-height:30px; background: rgba(0,0,0,0.5); color:#458cfe;}
+.mapframetop{ width:100%; height:40px; margin-top:20px; background: rgba(0,0,0,0.5);
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-bottomleft: 0;
+-moz-border-radius-bottomright: 0;
+ 
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-webkit-border-bottom-left-radius: 0;
+-webkit-border-bottom-right-radius: 0;
+
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 0;
+border-bottom-left-radius:  0;  }
+.mapframebottom{ width:100%; background: rgba(0,0,0,0.3);}
+.county_mapframebottom{ width:23%; background: rgba(0,0,0,0);position: absolute;right: 10px;top:100px}
+.county_mapframebottom2{ width:23%; background: rgba(0,0,0,0);position: absolute;right: 10px;top:440px}
+@media \0screen\,screen\9 {
+.topframebg{background-color:#000000; filter:Alpha(opacity=50); position:static; *zoom:1;}
+.mapframetop{background-color:#000000; filter:Alpha(opacity=50); position:static; *zoom:1;}
+.mapframebottom{background-color:#000000;filter:Alpha(opacity=30);position:static;*zoom:1;}
+}
+.toptit{ float:left; margin-left:5px; font-size:14px; font-weight:bold; color:#faa012; line-height:40px; position:relative;}
+.topico{ float:left; margin-left:10px; width:16px; height:16px; margin-top:13px; position:relative;}
+.datalist{ width:100%; margin:0; padding:0;text-align: center}
+.datalist li{ width:100%; height:30px; line-height:30px; border-bottom:1px solid #002e63; padding:0px;}
+.datalist li .list01{ width:133px; float:left;}
+.datalist li .list02{ width:57px; float:left;  font-family:Arial, Helvetica, sans-serif;}
+.datalist li .list03{ width:57px; float:left;  font-family:Arial, Helvetica, sans-serif;}
+
+/*导航*/
+.imcm ul,.imcm li,.imcm div,.imcm span,.imcm a{
+    padding:0px;
+    margin:0;
+    list-style:none outside none;
+    border-style:none;background-image:none;
+    clear:none;float:none;
+    display:block;
+    position:static;
+    overflow:visible;
+    line-height:normal;}
+.imcm li a img{display:inline;border-width:0px;}
+.imcm span{display:inline;}
+.imcm .imclear,.imclear{clear:both;height:0px;visibility:hidden;line-height:0px;font-size:1px;}
+.imcm .imsc{position:relative;}.imcm .imsubc{position:absolute;visibility:hidden;}
+.imcm li{list-style:none;font-size:10px;float:left;}
+.imcm ul ul li{width:100%;float:none !important;}
+.imcm a{display:block;position:relative;}
+.imcm ul .imsc,.imcm ul .imsubc {z-index:999;}
+.imcm ul ul .imsc,.imcm ul ul .imsubc{z-index:999;}
+.imcm ul ul ul .imsc,.imcm ul ul ul .imsubc{z-index:999;}
+.imde ul li:hover .imsubc{visibility:visible;}
+.imde ul ul li:hover .imsubc{visibility:visible;}.imde ul ul ul li:hover  .imsubc{visibility:visible;}.imde li:hover ul  .imsubc{visibility:hidden;}.imde li:hover ul ul .imsubc{visibility:hidden;}.imde li:hover ul ul ul  .imsubc{visibility:hidden;}.imcm .imea{display:block;position:relative;left:0px;font-size:1px;line-height:1px;height:0px;width:1px;float:right;}.imcm .imea span{display:block;position:relative;font-size:1px;line-height:0px;}.dvs,.dvm{border-width:0px}/*\*//*/.imcm .imea{visibility:hidden;}/**/</style>[if IE]><style type="text/css">.imcm .imea span{position:absolute;}.imcm .imclear,.imclear{display:none;}.imcm{zoom:1;} .imcm li{curosr:hand;} .imcm ul{zoom:1}.imcm a{zoom:1;}</style><![endif][if gte IE 7]>
+#imouter0 {padding:0px; margin:0px;}
+#imenus0 li ul { text-align:left; padding:10px; line-height:30px; background:#000;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";/**IE**/filter:alpha(opacity=30);/**IE**/opacity: .30;/**火狐**/}
+#imenus0 li a, #imenus0 .imctitle {text-align:center; text-decoration:none;line-height:40px;}
+#imenus0 li:hover>a {text-decoration:none;line-height:40px;}
+#imenus0 li a.ihover, .imde imenus0 a:hover {text-decoration:none;}
+#imenus0 ul a, #imenus0 .imsubc li .imctitle{ text-decoration:none;}
+#imenus0 ul li:hover>a { text-decoration:none; background:#fff;}
+#imenus0 ul li a.ihover {text-decoration:none; background:#fff;}
+/*县级样式*/
+#left_select{
+    background-color: transparent;
+    width: 300px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+/*input样式*/
+#county_input{
+    padding-left: 10px;
+    height: 30px;
+    border:1px solid #ccc ;
+    border-bottom: 0px;
+}
+.county_select{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+.county_headernav{
+    top: 40px;
+    position: absolute;
+    margin: 0 auto;
+    margin-left: 40%;
+    z-index: 999;
+}
+.county_mainbigtit {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    color: #1175B0;
+}
+#county_right1_charts{
+    display: none;
+    width: 300px;
+    background:#fff;
+}
+#county_right2_charts{
+    width: 300px;
+    background:#fff;
+}
+#showbackbtn{
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    color:#fff;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    width:15px;
+    height: 50px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 1px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+#showbackbtn1{
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    color:#fff;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    width:15px;
+    height: 50px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 1px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+#showbackbtn:hover{
+    width: 16px;
+    text-align: center;
+    transition:width 0.5s;
+    cursor: pointer;
+    -moz-transition:width 0.5s; /* Firefox 4 */
+    -webkit-transition:width 0.5s; /* Safari and Chrome */
+    -o-transition:width 0.5s; /* Opera */
+}
+#showbackbtn1:hover{
+    width: 16px;
+    text-align: center;
+    transition:width 0.5s;
+    cursor: pointer;
+    -moz-transition:width 0.5s; /* Firefox 4 */
+    -webkit-transition:width 0.5s; /* Safari and Chrome */
+    -o-transition:width 0.5s; /* Opera */
+}
+#showallgdp{
+    color: #8ecefe;
+}
+#showallgdp:hover{
+    color: #5ab8ff;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+    background-color: #1b89ef;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 0px;
+    background-color: #1b89ef;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.9);
+    background-color: #000;
+}
+.topbg{ background:#1b89ef; width:100%; height:50px;position:absolute; z-index:9999;}
+.topleft-tit{cursor: pointer; float:left; font-size:16px; color:#fff; height:50px; line-height:50px; padding:0 10px;}
+.topleft-muluico{ float:left; background:url(../images/map-city_02.png) no-repeat; width:26px; height:50px;}
+.topright{ float:right;  height:50px; line-height:50px; padding:0 15px;}
+.topright a{ color:#fff;}
+.topright a:hover{ color:#ff8920; text-decoration:underline;}
+.topico01{ cursor: pointer;float:left; line-height:50px; background:url(../images/mapico01.png) no-repeat left center; padding-left:25px; color:#fff;}
+.topico02{ float:left; line-height:50px; margin-left:10px; background:url(../images/mapico02.png) no-repeat left center; padding-left:25px; color:#fff;}
+.topico03{ float:left; line-height:50px; margin-left:10px; background:url(../images/mapico03.png) no-repeat left center; padding-left:25px; color:#fff;}

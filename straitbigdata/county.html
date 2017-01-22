@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <link href="css/county.css" rel="stylesheet" type="text/css" />
+  <link href="css/animate.css" rel="stylesheet" type="text/css" />
+  <link href="css/pagination.css" rel="stylesheet" type="text/css"  />
+  <link href="css/infowindow.css" rel="stylesheet" type="text/css" />
+  <link href="css/BMap.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="js/lib/echarts.simple.min.js"></script>
+  <script type="text/javascript" src="js/lib/echarts-wordcloud.min.js"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=yFaUp3RA2X7G6owUwKKvVQEH"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+  <script type="text/javascript" src="js/marker.js"></script>
+  <script type="text/javascript" src="js/county.js"></script>
+  <script type="text/javascript" src="js/lib/pagination.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <title>产业大数据分析</title>
+</head>
+<body style="height: 100%;width: 100%;padding: 0;margin: 0;position: absolute">
+<div class="topbg">
+  <div class="topleft-tit">全国</div><div class="topleft-muluico1"></div>
+  <div class="topleft-tit"><span class="topleft-arr provincename" class=""></span></div><div class="topleft-arr topleft-muluico"></div>
+  <div class="topright">
+    <!--<a href="#" class="topico01"><span class="countyname"></span>产业导航</a>-->
+    <a href="index.html" class="topico02">返回首页</a>
+    <a style="cursor: pointer" class="topico03" onclick="history.go(-1)">返回上一级</a>
+  </div>
+</div>
+<div id="county_main" style="height: 100%;width: 100%"></div>
+<div class="headernav">
+  <!--<div class="headernavtit">2015年<span class="countyname"></span>产业导航</div>-->
+  <div class="clear"></div>
+  <div class="imcm imde" id="imouter0">
+    <!--<ul id="imenus0">-->
+      <!--<li class="headernav01" style=" line-height:40px; background:#79aef8;">第一产业（万元/年）-->
+        <!--<div class="imsc"><div class="imsubc" style="width:300%;"><ul>-->
+          <!--总人口：1023520025万人<br/>-->
+          <!--城镇单位就业人员：2842214万人<br/>-->
+          <!--2016年度申报项目：40665项，其中848项已立项。-->
+        <!--</ul></div></div></li>-->
+      <!--<li class="headernav02" style=" line-height:40px; background:#98c0f8;">第二产业（万元/年）-->
+        <!--<div class="imsc"><div class="imsubc" style="width:300%; left:-100%;"><ul>-->
+          <!--总人口：10520025万人<br/>-->
+          <!--城镇单位就业人员：2842214万人<br/>-->
+          <!--2016年度申报项目：40665项，其中848项已立项。-->
+        <!--</ul></div></div></li>-->
+      <!--<li class="headernav03" style=" line-height:40px; background:#bad4f9;">第三产业（万元/年）-->
+        <!--<div class="imsc"><div class="imsubc" style="width:300%;left:-200%;"><ul>-->
+          <!--总人口：10230025万人<br/>-->
+          <!--城镇单位就业人员：28214万人<br/>-->
+          <!--2016年度申报项目：40665项，其中848项已立项。-->
+        <!--</ul></div></div></li>-->
+    <!--</ul>-->
+    <div class="clear"></div>
+    <script language="JavaScript" src="js/ocscript.js" type="text/javascript"></script>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div class="countylabel2"></div>
+<div id="countyleftframe">
+  <div class="countytop">
+    <input id="list_name" name="" onkeydown=KeyDown() placeholder="企业/项目名称" type="text" class="countyinput"/><input name="提交" onclick="submit_keywords()" type="submit" class="signin2 countysearchbtn" value="" />
+    <div id="topnav"><a id="show_more" href="" class="signin menu-open"><span></span></a> </div>
+  </div>
+  <div class="clear"></div>
+  <fieldset id="signin_menu">
+    <div class="countylabel">
+      <div class="countylabellist">
+        <ul>
+          <li><a href="#" class="countylabellistselect" onclick="selsectindustry(7,this)">工商数据</a></li>
+          <li><a href="#"  onclick="selsectindustry(1,this)">科研项目</a></li>
+          <li><a href="#"  onclick="selsectindustry(2,this)">申报项目</a></li>
+          <li><a href="#"  onclick="selsectindustry(3,this)">三资企业</a></li>
+          <li><a href="#"  onclick="selsectindustry(4,this)">在建重点项目</a></li>
+          <li><a href="#"  onclick="selsectindustry(5,this)">产学研合作</a></li>
+          <li><a href="#"  onclick="selsectindustry(6,this)">大型企业</a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+      <div class="selectlist" style="margin:5px 5px">
+        <!--<hr>-->
+        <select id="list_type" class="select_class" onchange="selsectindustry(0,this);">
+          <option value="">全部</option>
+        </select>
+        <select id="list_type_second"  class="select_class" onchange="second_dustry()">
+          <option value="">全部</option>
+        </select>
+      </div>
+    </div>
+    <div id="Searchresult"></div>
+    <div id="hiddenresult" >
+    </div>
+    <div class="clear"></div>
+    <div id="Pagination" class="pagination" style="text-align: center"><!-- 这里显示分页 --></div>
+  </fieldset>
+</div>
+<div id="china_main"></div>
+<div id="countyrightframe">
+  <!--<div id="countyframetop1" class="countyframetop1">-->
+    <!--<span class="topico"><img src="images/ico03.png" width="16" height="16" /></span><span class="toptit">企业创新指数</span>-->
+  <!--</div>-->
+  <!--<div id="county_right1_frame">-->
+    <!--<div id="county_right1_charts" class="animated zoomIn"></div>-->
+  <!--</div>-->
+  <div class="countyframetop">
+    <span class="topico"><img src="images/ico03.png" width="16" height="16" /></span><span class="toptit" id="showmorecompany">知名企业</span>
+  </div>
+  <div class="countyframebottom">
+    <div id="county_right2_charts" style=" width:100%;height:250px;"></div>
+  </div>
+</div>
+</body>
+</html>

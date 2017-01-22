@@ -1,0 +1,328 @@
+*{ margin:0; padding:0;}
+body{color:#333333;font-family:"微软雅黑"; font-size:14px;background:#fff;}
+img{ border:0;}
+table{ font-size:14px;}
+ol,ul li{ list-style-type:none;}
+a{color:#333333; text-decoration:none;}
+a:focus {outline:none;-moz-outline:none;}
+a:hover{color:#58a054; text-decoration:underline;}
+.clear {clear:both;}
+.fl{ float:left;}
+.fr{ float:right; display:inline;}
+.poa{ position:absolute;}
+.mainframe{width:2400px; height:1350px;background:url(../images/mainbg.jpg) no-repeat center; margin:0 auto; }
+.mainbigtit{ margin:0 auto 50px auto; font-size:50px; font-weight:bold; line-height:50px; text-align:center; padding:50px 0 0 0;color:#fff;-webkit-box-reflect: below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.2));
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(136, 184, 233, 1)), to(rgba(255, 255, 255, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#chinamap{width:1000px; height:700px;margin:80px auto 0 auto; position:relative; }
+#mapleftframe{ float:left; width:600px; color:#fff; margin-left:20px; }
+#maprightframe{ float:right; width:600px; color:#fff; margin-right:20px;}
+.headernav{    top: 70px;
+    position: absolute;
+    width: 30%;
+    z-index: 999;
+    left: 35%;}
+.headernavtit{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #6da9fe;
+    filter: Dropshadow(offx=2,offy=0,color=#fff)Dropshadow(offx=0,offy=2,color=#fff)Dropshadow(offx=0,offy=-2,color=#fff)Dropshadow(offx=-2,offy=0,color=#fff);
+    text-shadow: #fff 2px 0 0,#fff 0 2px 0,#fff -2px 0 0,#fff 0 -2px 0;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 0;
+}
+.headernav01{ width:33.333%; text-align:center; color:#fff; background: rgba(0,0,0,0.3);}
+.headernav02{ width:33.333%; text-align:center; color:#fff; background: rgba(0,0,0,0.5);}
+.headernav03{ width:33.333%; text-align:center; color:#fff; background: rgba(0,0,0,0.8);}
+.topframebg{ width:100%; height:30px;line-height:30px; background: rgba(0,0,0,0.5); color:#458cfe;}
+.mapframetop{ width:100%; height:40px; margin-top:20px; line-height:40px; background: rgba(0,0,0,0.5);
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-bottomright: 0;
+
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius:  0;  }
+.mapframebottom{ width:100%; background: rgba(0,0,0,0.3);}
+@media \0screen\,screen\9 {
+    .topframebg{background-color:#000000; filter:Alpha(opacity=50); position:static; *zoom:1;}
+    .mapframetop{background-color:#000000; filter:Alpha(opacity=50); position:static; *zoom:1;}
+    .mapframebottom{background-color:#000000;filter:Alpha(opacity=30);position:static;*zoom:1;}
+}
+.toptit{ float:left; margin-left:5px; font-size:14px; font-weight:bold; color:#faa012; line-height:40px; position:relative;}
+.topico{ float:left; margin-left:10px; width:16px; height:16px; margin-top:13px; position:relative;}
+.datalist{ width:600px; margin:0; padding:0;}
+.datalist li{ width:590px; height:30px; line-height:30px; border-bottom:1px solid #002e63; padding:0 5px;}
+.datalist li .list01{ width:170px; float:left;}
+.datalist li .list02{ width:70px; float:left;  font-family:Arial, Helvetica, sans-serif;}
+
+/*导航*/
+.imcm ul,.imcm li,.imcm div,.imcm span,.imcm a{padding:0px;margin:0;list-style:none outside none;border-style:none;background-image:none;clear:none;float:none;display:block;position:static;overflow:visible;line-height:normal;}.imcm li a img{display:inline;border-width:0px;}.imcm span{display:inline;}.imcm .imclear,.imclear{clear:both;height:0px;visibility:hidden;line-height:0px;font-size:1px;}.imcm .imsc{position:relative;}.imcm .imsubc{position:absolute;visibility:hidden;}.imcm li{list-style:none;font-size:1px;float:left;}.imcm ul ul li{width:100%;float:none !important;}.imcm a{display:block;position:relative;}.imcm ul .imsc,.imcm ul .imsubc {z-index:10;}.imcm ul ul .imsc,.imcm ul ul .imsubc{z-index:20;}.imcm ul ul ul .imsc,.imcm ul ul ul .imsubc{z-index:30;}.imde ul li:hover .imsubc{visibility:visible;}.imde ul ul li:hover .imsubc{visibility:visible;}.imde ul ul ul li:hover  .imsubc{visibility:visible;}.imde li:hover ul  .imsubc{visibility:hidden;}.imde li:hover ul ul .imsubc{visibility:hidden;}.imde li:hover ul ul ul  .imsubc{visibility:hidden;}.imcm .imea{display:block;position:relative;left:0px;font-size:1px;line-height:1px;height:0px;width:1px;float:right;}.imcm .imea span{display:block;position:relative;font-size:1px;line-height:0px;}.dvs,.dvm{border-width:0px}/*\*//*/.imcm .imea{visibility:hidden;}/**/</style>[if IE]><style type="text/css">.imcm .imea span{position:absolute;}.imcm .imclear,.imclear{display:none;}.imcm{zoom:1;} .imcm li{curosr:hand;} .imcm ul{zoom:1}.imcm a{zoom:1;}</style><![endif][if gte IE 7]>
+#imouter0 {padding:0px; margin:0px;}
+#imenus0 li ul { text-align:left; padding:10px; line-height:30px; background:#000;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";/**IE**/filter:alpha(opacity=30);/**IE**/opacity: .30;/**火狐**/}
+#imenus0 li a, #imenus0 .imctitle {text-align:center; text-decoration:none;line-height:40px;}
+#imenus0 li:hover>a {text-decoration:none;line-height:40px;}
+#imenus0 li a.ihover, .imde imenus0 a:hover {text-decoration:none;}
+#imenus0 ul a, #imenus0 .imsubc li .imctitle{ text-decoration:none;}
+#imenus0 ul li:hover>a { text-decoration:none; background:#fff;}
+#imenus0 ul li a.ihover {text-decoration:none; background:#fff;}
+/*县级*/
+#countyleftframe{position: absolute;top:100px; border:1px solid #ddd; width:30%; float:left; margin-left:20px; background:rgba(255,255,255,0.7);}
+#countyleftframe fieldset{ border:0; padding:0; margin:0;}
+/*#countyrightframe{position: absolute;top:120px;right: 10px; width:300px;}*/
+.countytop{ width:100%; height:50px;}
+.countyinput{ width:75%; height:50px; line-height:50px; padding:0 2.5%; border:0; float:left; font-size:14px;}
+.countysearchbtn{ float:left; border-left:1px solid #ddd; border-right:1px solid #ddd; border-top:0; border-bottom:0; background:#fff; width:10%; height:50px; background:url(../images/ico-search.jpg) no-repeat center;}
+.countylabel{ width: 100%;
+    padding: 5px 0px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: rgba(255,255,255,0.5);}
+.countylabel2{
+    display: none;
+    position: absolute;
+    top: 100px;
+    border: 1px solid #ddd;
+    width: 30%;
+    height: 79px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 50px;
+    z-index: 999;
+    background: rgba(255,255,255,0.7);}
+.countylabel-input{ border:1px solid #ddd; width:150px; height:30px; line-height:30px; margin:10px; float:left;}
+.countylabellist ul{ width:100%; margin:0; padding:0;}
+.countylabellist li{ float:left;color:#79aef8;  text-align:center;  margin:5px 2px;margin-left: 6px}
+.countylabellist li a{ 
+    font-size: 12px;
+    float: left;
+    background: #fff;
+    padding: 2px 2px;
+    border: 1px solid #095db1;
+    text-decoration: none;
+    color: #095db1;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; }
+.countylabellist li a:hover{color:#fff; background:#6a95e9;}
+.countylabellistselect{color:#fff!important; background:#095db1!important;}
+#county_right1_charts{ display:none;position: absolute;width:300px; height:240px; background:#fff; border:1px solid #ddd;border: 0;}
+#county_right1_frame{ display:none;position: absolute;top:70px;width:300px; height:240px; background:#fff; border:1px solid #ddd;border: 0;}
+#county_right2_charts{ position: absolute;width:300px; height:240px;background:#fff; border:1px solid #ddd;border: 0}
+.countyframetop{right:10px;position: absolute;top:440px; width:300px; height:40px; line-height:40px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-bottomright: 0;
+
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius:  0;
+    border: 0px;
+
+    filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);
+    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);/*IE8*/
+    background:#236ed8; /* 一些不支持背景渐变的浏览器 */
+    background:-moz-linear-gradient(linear, 0 0, 0 bottom, from(#236ed8), to(rgba(35, 110, 216, 1)));
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#236ed8), to(rgba(35, 110, 216, 1)));
+    background:-o-linear-gradient(linear, 0 0, 0 bottom, from(#236ed8), to(rgba(35, 110, 216, 1)));
+
+}
+.countyframetop1{
+    position: absolute;top:30px; width:300px; height:40px; line-height:40px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-bottomright: 0;
+
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius:  0;
+    border: 0px;
+
+    filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);
+    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);/*IE8*/
+    background:#236ed8; /* 一些不支持背景渐变的浏览器 */
+    background:-moz-linear-gradient(top, #b7d3fa, rgba(211, 222, 242, 0.5));
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#236ed8), to(rgba(35, 110, 216, 1)));
+    background:-o-linear-gradient(top, #b7d3fa, rgba(211, 222, 242, 0.5));
+
+}
+.countyframebottom{right:10px;position: absolute;top: 480px; height:240px;width:300px; border:1px solid #ddd; border-top:0;background: rgba(255,255,255,1);}
+/*分页*/
+.manu {PADDING: 20px 0;  TEXT-ALIGN: center;}
+.manu A {BORDER: #e8e8e8 1px solid; PADDING:2px 5px ;MARGIN: 2px;  COLOR: #036cb4; TEXT-DECORATION: none; background:#fff;}
+.manu A:hover { COLOR: #666; BORDER: #999 1px solid;}
+.manu A:active {BORDER: #999 1px solid; COLOR: #666;}
+.manu .current {BORDER: #036cb4 1px solid; PADDING:2px 5px;  FONT-WEIGHT: bold;MARGIN: 2px;  COLOR: #fff; BACKGROUND-COLOR: #036cb4}
+.manu .disabled {BORDER: #eee 1px solid; PADDING:2px 5px; MARGIN: 2px; COLOR: #ddd; }
+
+#topnav { float:right; height:20px; width:10%;margin-top:12px; }
+#topnav a.signin {text-decoration:none;}
+#topnav a.signin:hover {text-decoration:none;}
+#topnav a.signin, #topnav a.signin:hover {*background-position:0 3px!important;}
+a.signin {position:relative;}
+a.signin span {background-image:url(../images/toggle_down_light.jpg);background-repeat:no-repeat;background-position:100% 100%;padding:0 10px 6px 20px;}
+#topnav a.menu-open {outline:none;}
+a.signin.menu-open span {background-image:url(../images/toggle_up_dark.jpg);}
+#signin_menu {display:block;	width:100%;	z-index:100;}
+.countylist{ width:96%; margin:0 auto;}
+.countylist li{ width:100%; margin-top:5px;}
+.countylistimg{ float:left; width:22px; height:22px; line-height:22px; text-align:center; color:#fff; padding-bottom:10px; background:url(../images/ico-punctuation.jpg) no-repeat; margin-right:10px;cursor: pointer}
+.countylisttit{ float:left;width: 75%; color:#1b90ff;  font-size:16px;cursor: pointer}
+.countylisttit:hover{color: #1b80ff;}
+#companydetail{color: #00afd4;  }
+#companydetail:hover{color: #00a2d4;  }
+.countylistcon{ float:left; margin-left: 32px;line-height:24px; color:#575757}
+.countylistpr{
+    float: right;
+    font-size: 13px;
+    background: #ff8a44;
+    padding: 3px;
+    margin-right:7px;
+    text-decoration: none;
+    color: #fff;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;}
+.countylistpr2{
+    float: left;
+    font-size: 13px;
+    background: #ff8a44;
+    padding: 3px;
+    margin-left: 0px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;}
+#hiddenresult{
+    display: none;
+}
+#showbackbtn{
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    color:#fff;
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    width:15px;
+    height: 50px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 1px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    z-index: 1;
+}
+#showbackbtn1{
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    color:#fff;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    width:15px;
+    height: 50px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 1px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    z-index: 1;
+}
+#showbackbtn:hover{
+    width: 16px;
+    text-align: center;
+    transition:width 0.5s;
+    cursor: pointer;
+    -moz-transition:width 0.5s; /* Firefox 4 */
+    -webkit-transition:width 0.5s; /* Safari and Chrome */
+    -o-transition:width 0.5s; /* Opera */
+}
+#showbackbtn1:hover{
+    width: 16px;
+    text-align: center;
+    transition:width 0.5s;
+    cursor: pointer;
+    -moz-transition:width 0.5s; /* Firefox 4 */
+    -webkit-transition:width 0.5s; /* Safari and Chrome */
+    -o-transition:width 0.5s; /* Opera */
+}
+.select_class{
+    width: 49%;
+    color: #095db1;
+    cursor: pointer;
+    height: 25px;
+}
+#Searchresult{
+    overflow-y: auto;
+    height: 500px
+}
+.noresult{
+    text-align: center;
+    margin-top: 100px;
+}
+.topbg{ background:#1b89ef; width:100%; height:50px;position:absolute; z-index:9999;}
+.topleft-tit{cursor: pointer;  float:left; font-size:16px; color:#fff; height:50px; line-height:50px; padding:0 10px;}
+.topleft-muluico{ float:left; background:url(../images/map-city_02.png) no-repeat; width:26px; height:50px;}
+.topleft-muluico1{ float:left; background:url(../images/map-city_02.png) no-repeat; width:26px; height:50px;}
+.topright{ float:right;  height:50px; line-height:50px; padding:0 15px;}
+.topright a{ color:#fff;}
+.topright a:hover{ color:#ff8920; text-decoration:underline;}
+.topico01{ cursor: pointer;float:left; line-height:50px; background:url(../images/mapico01.png) no-repeat left center; padding-left:25px; color:#fff;}
+.topico02{ float:left; line-height:50px; margin-left:10px; background:url(../images/mapico02.png) no-repeat left center; padding-left:25px; color:#fff;}
+.topico03{ float:left; line-height:50px; margin-left:10px; background:url(../images/mapico03.png) no-repeat left center; padding-left:25px; color:#fff;}

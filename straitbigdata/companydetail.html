@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/companydetail.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/companydetail.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<title>公司详情</title>
+</head>
+<body>
+<div class="topbg">
+    <div class="topleft-tit">全国</div><div class="topleft-muluico1"></div>
+    <div class="topleft-tit"><span class="topleft-arr provincename" class=""></span></div><div class="topleft-arr topleft-muluico"></div>
+    <div class="topright">
+        <!--<a href="#" class="topico01"><span class="countyname"></span>产业导航</a>-->
+        <a href="index.html" class="topico02">返回首页</a>
+        <a style="cursor: pointer" class="topico03" onclick="history.go(-1)">返回上一级</a>
+    </div>
+</div>
+<div class="county-content">
+<h2 id="companyname"></h2>
+<!--<h1>简称：圆点光电</h1>-->
+<p class="county-list"><strong>企业类型：</strong><sapn id="company_type"></sapn></p>
+<p class="county-list"><strong>主管单位：</strong><sapn id="company_affiliated"></sapn></p>
+<p class="county-list"><strong>所在地：</strong><sapn id="company_address"></sapn></p> 
+<div class="clear"></div>
+<div class="countyview-listbg">
+<div class="countyview-listtit">企业简介</div>
+</div>
+<div class="countyview-listcon" id="company_introduction"></div>
+<div class="countyview-listbg">
+<div class="countyview-listtit">经营范围</div>
+</div>
+<div class="countyview-listcon" id="company_manage_field"></div>
+<div class="clear"></div>
+</div>
+</body>
+</html>
